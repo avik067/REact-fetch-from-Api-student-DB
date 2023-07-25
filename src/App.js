@@ -15,7 +15,7 @@ class App extends Component  {
    getData = async() =>{
     console.log("getting data")
     try {
-    let a  = await fetch("http://localhost:4000/students")
+    let a  = await fetch("https://crud-mongoose-final.vercel.app/students")
     let data = await a.json()
     this.setState({data:data})
 
